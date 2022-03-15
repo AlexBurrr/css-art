@@ -32,23 +32,25 @@
 
 .beam{
     position: absolute;
+    display: block;
     background-color: var(--warriors-yellow);
     clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
-    top: 12rem;
+    top: 11rem;
     left: 8rem;
-    height: 28.5vmin;
-    width: 20vmin;
-    display: flex;
+    height: 12.4rem;
+    width: 12rem;
+    
    
 }
-.beam::after{
-    content: "";
+.beam-2{
+    
     position: absolute;
-    background: var(--warriors-yellow);
-    display: flex;
+    display: inherit;
+    background-color: var(--warriors-yellow);
     clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
-    height: 28.5vmin;
-    width: 30vmin;
-    left: 2rem;;
+    height: 13rem;
+    width: 12rem;
+    top: 11rem;
+    left: 10rem;
 
 }
