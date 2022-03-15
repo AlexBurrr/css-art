@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --warriors-yellow:yellow;
+}
+
+.art-container-1{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -99;
+    height: 30rem;
+    width: 30rem;
+    background-color: blue;
+}
+
+.circle{
+    position: relative;
+    display: flex ;
+    /* justify-content: center;
+    align-content: center; */
+    border: solid 8px var(--warriors-yellow) ;
+    border-radius: 200px;
+    width: 300px;
+    height: 300px;
+}
+
+.beam{
+    position: absolute;
+    background-color: var(--warriors-yellow);
+    clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
+    top: 12rem;
+    left: 8rem;
+    height: 28.5vmin;
+    width: 20vmin;
+    display: flex;
+   
+}
+.beam::after{
+    content: "";
+    position: absolute;
+    background: var(--warriors-yellow);
+    display: flex;
+    clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
+    height: 28.5vmin;
+    width: 30vmin;
+    left: 2rem;;
+
+}
