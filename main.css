@@ -1,120 +1,119 @@
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root{
-    --warriors-yellow:yellow;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .art-container {
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -99;
-    height: 30rem;
-    width: 30rem;
-    background-color: blue;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -99;
+  height: 30rem;
+  width: 30rem;
+  background-color: blue;
 }
 
-.circle{
-    position: relative;
-    display: flex ;
-    /* justify-content: center;
-    align-content: center; */
-    border: solid 8px var(--warriors-yellow) ;
-    border-radius: 200px;
-    width: 300px;
-    height: 300px;
+.circle {
+  position: relative;
+  display: flex;
+  /* justify-content: center;
+  align-content: center; */
+  border: solid 8px yellow;
+  border-radius: 200px;
+  width: 300px;
+  height: 300px;
 }
 
-.beam{
-    position: absolute;
-    display: block;
-    background-color: var(--warriors-yellow);
-    clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
-    top: 11rem;
-    left: 8rem;
-    height: 12.4rem;
-    width: 12rem;
-    
-   
+.beam {
+  position: absolute;
+  display: block;
+  background-color: var(--warriors-yellow);
+  -webkit-clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
+          clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
+  top: 11rem;
+  left: 8rem;
+  height: 12.4rem;
+  width: 12rem;
 }
-.beam-2{
-    
-    position: absolute;
-    display: inherit;
-    background-color: var(--warriors-yellow);
-    clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
-    height: 13rem;
-    width: 12rem;
-    top: 11rem;
-    left: 10rem;
 
+.beam-2 {
+  position: absolute;
+  display: inherit;
+  background-color: var(--warriors-yellow);
+  -webkit-clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
+          clip-path: polygon(25% 3%, 30% 0, 33% 100%, 23% 99%);
+  height: 13rem;
+  width: 12rem;
+  top: 11rem;
+  left: 10rem;
 }
 
 /*//////////////////           2            //////////////////////////////////////////////////////////////////////// */
-
-.art-container-2{
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: -99;
-    height: 30rem;
-    width: 30rem;
-    background-color: rgb(172, 115, 167);
+.art-container-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -99;
+  height: 30rem;
+  width: 30rem;
+  background-color: #ac73a7;
 }
 
-.egg{
-    height: 300px;
-    width: 230px;
-    background-color: #fff;;
-    position: absolute;
-    margin: auto;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    box-shadow: 25px rgba(0,0,0,0.1);
-
+.egg {
+  height: 300px;
+  width: 230px;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+  box-shadow: 25px rgba(0, 0, 0, 0.1);
 }
 
-.egg:before{
-    content: "";
-    position: absolute;
-    height: 14px;
-    width: 14px;
-    background-color: black;
-    border-radius: 50%;
-    top: 180px;
-    right: 88px;
-    box-shadow: 
-    -40px 0 0 black,
-    10px 15px 0 -2px orange,
-    -50px 15px 0 -2px orange,
-    -20px 0 0 70px #f5d201
-    
+.egg:before {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background-color: black;
+  border-radius: 50%;
+  top: 180px;
+  right: 88px;
+  box-shadow: -40px 0 0 black, 10px 15px 0 -2px orange, -50px 15px 0 -2px orange, -20px 0 0 70px #f5d201;
 }
 
-.egg:after{
-    content:"";
-    position: absolute;
-    height: 15px;
-    width: 25px;
-    background-color: black;
-    top: 200px;
-    left: 102px;
-    border-radius: 5px 5px 15px 15px;
-    border: 3px solid #010008;
-    background: radial-gradient(
-        at 50% 100%,
-        orange 8px, 
-        #010008 8px
-    );
-
+.egg:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 25px;
+  background-color: black;
+  top: 200px;
+  left: 102px;
+  border-radius: 5px 5px 15px 15px;
+  border: 3px solid #010008;
+  background: radial-gradient(at 50% 100%, orange 8px, #010008 8px);
 }
+
+.art-container-3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -99;
+  height: 30rem;
+  width: 30rem;
+  background-color: #e2d029;
+}
+.art-container-3 .charmander {
+  height: 15px;
+  width: 15px;
+  background-color: orange;
+  box-shadow: 15px 0 orange, 30px 0 orange, 45px 0 orange, 60px 0 black, 75px 0 #e2d029, 90px 0 black, 105px 0 orange, 120px 0 orange, 135px 0 black, 0px -15px orange, 0px -30px orange, 0px -45px orange, 0px -60px orange, 0px -75px orange, 0px -90px black, 0px -105px black, -15px 0 orange, -30px 0 orange, -45px 0 orange, -60px 0 orange, -75px 0 orange, -90px 0 black, -105px 0 black, 0 15px black, 0 30px orange, 0 45px black, 0 60px yellow, 0 75px yellow, 0 90px black, 0 105px black, 15px 15px orange, 30px 15px orange, 45px 15px orange, 60px 15px black, 75px 15px black, 90px 15px orange, 105px 15px orange, 120px 15px black, 15px 30px orange, 30px 30px orange, 45px 30px orange, 60px 30px orange, 75px 30px black, 90px 30px orange, 105px 30px orange, 120px 30px black, 15px 45px black, 30px 45px orange, 45px 45px orange, 60px 45px orange, 75px 45px black, 90px 45px orange, 105px 45px black, 15px 60px orange, 30px 60px orange, 45px 60px orange, 60px 60px orange, 75px 60px black, 90px 60px black, 15px 75px orange, 30px 75px orange, 45px 75px orange, 60px 75px black, 75px 75px black, 15px 90px black, 30px 90px orange, 45px 90px black, 60px 90px black, 15px 105px #e2d029, 30px 105px orange, 45px 105px #e2d029, 60px 105px black, 15px 120px black, 30px 120px black, 45px 120px black, 60px 120px black, -15px 15px orange, -30px 15px orange, -45px 15px black, -60px 15px black, -75px 15px black, -15px 30px black, -30px 30px yellow, -45px 30px yellow, -60px 30px black, -15px 45px yellow, -30px 45px yellow, -45px 45px yellow, -60px 45px black, -15px 60px yellow, -30px 60px yellow, -45px 60px black, -60px 60px #e2d029, -75px 60px black, -15px 75px yellow, -30px 75px black, -45px 75px black, -60px 75px black, -15px -15px orange, -30px -15px orange, -45px -15px orange, -60px -15px orange, -75px -15px orange, -90px -15px orange, -105px -15px orange, -120px -15px black, -15px -30px orange, -30px -30px orange, -45px -30px black, -60px -30px black, -75px -30px orange, -90px -30px orange, -105px -30px orange, -120px -30px orange, -135px -30px black, -15px -45px orange, -30px -45px orange, -45px -45px black, -60px -45px black, -75px -45px orange, -90px -45px orange, -105px -45px orange, -120px -45px orange, -135px -45px black, -15px -60px orange, -30px -60px orange, -45px -60px black, -60px -60px white, -75px -60px orange, -90px -60px orange, -105px -60px orange, -120px -60px orange, -135px -60px black, -15px -75px orange, -30px -75px orange, -45px -75px orange, -60px -75px orange, -75px -75px orange, -90px -75px orange, -105px -75px orange, -120px -75px black, -15px -90px orange, -30px -90px orange, -45px -90px orange, -60px -90px orange, -75px -90px orange, -90px -90px orange, -105px -90px black, -15px -105px orange, -30px -105px orange, -45px -105px orange, -60px -105px orange, -75px -105px orange, -90px -105px black, -15px -120px black, -30px -120px orange, -45px -120px orange, -60px -120px orange, -75px -120px black, -30px -135px black, -45px -135px black, -60px -135px black, 15px -15px orange, 30px -15px orange, 45px -15px black, 105px -15px black, 120px -15px orange, 135px -15px black, 15px -30px orange, 30px -30px black, 45px -30px #e2d029, 105px -30px black, 120px -30px yellow, 135px -30px black, 150px -30px black, 15px -45px orange, 30px -45px black, 45px -45px #e2d029, 90px -45px black, 105px -45px red, 120px -45px yellow, 135px -45px yellow, 150px -45px red, 165px -45px black, 15px -60px black, 90px -60px black, 105px -60px red, 120px -60px red, 135px -60px yellow, 150px -60px red, 165px -60px black, 15px -75px black, 90px -75px black, 105px -75px red, 120px -75px red, 135px -75px red, 150px -75px red, 165px -75px black, 105px -90px black, 120px -90px red, 135px -90px red, 150px -90px black, 105px -105px black, 120px -105px red, 135px -105px red, 150px -105px black, 105px -120px black, 120px -120px red, 135px -120px black, 120px -135px black;
+}/*# sourceMappingURL=main.css.map */
